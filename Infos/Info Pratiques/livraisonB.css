@@ -1,0 +1,157 @@
+body {
+    background: url("/Users/Piotr____/Documents/WCS/Moony-1/livraison/img/BG accueil.png") no-repeat;
+    background-size: 100%;
+    }
+[class*="col-"] {
+    background-color: yellow;
+}
+#logo{
+	max-height: 80px;
+    padding: 1px 0px;
+      }
+#carte{
+    color: red;
+    padding: 20px 0px;
+    font-size: 30px;
+    }
+#livraison {
+    color: red;
+    padding: 20px 0px;
+    font-size: 30px;
+    }
+
+#fb {
+    padding: 1px;
+    max-width: 50px;
+    height: auto;
+    }
+#insta {
+    padding: 1px;
+    max-width: 50px;
+    height: auto;
+    }
+#trip {
+    padding: 1px;
+    max-width: 50px;
+    height: auto;
+    }
+
+#body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+    }
+#horaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+    }
+#field {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: auto;
+    margin: 30px;
+    }
+#googlemap {
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+    }
+a:link {
+        text-decoration: none;
+    }  
+a:visited {
+        color: rgba(255,255,255,1)
+    }
+@media (max-width: 800px) {
+#logo {
+    max-width: 80px;
+    }
+#nav {
+    margin: auto;
+    font-size: 25px;
+    justify-content: center;
+    }
+.carte{
+    padding-right: 50px;
+    }
+.livraison {
+    padding-left: 50px;
+    }
+#fb {
+    padding: 5px;
+    max-width: 45px;
+    }
+#insta {
+    padding: 5px;
+    max-width: 45px;
+    }
+#trip {
+    padding: 5px;
+    max-width: 45px;
+    } 
+}
+@media (max-width: 610px) {
+#logo {
+    max-width: 70px;
+    }
+#nav {
+    margin: auto;
+    font-size: 20px;
+    justify-content: center;
+    }
+.carte{
+    padding-right: 40px;
+    }
+.livraison {
+    padding-left: 40px;
+    }
+#fb {
+    padding: 5px;
+    max-width: 40px;
+    }
+#insta {
+    padding: 5px;
+    max-width: 40px;
+    }
+#trip {
+    padding: 5px;
+    max-width: 40px;
+    } 
+}
+@media (max-width: 510px) {
+#logo {
+    max-width: 60px;
+    }
+#nav {
+    margin: auto;
+    font-size: 15px;
+    justify-content: center;
+    }
+.carte{
+    padding-right: 25px;
+    }
+.livraison {
+    padding-left: 25px;
+    }
+#fb {
+    padding: 5px;
+    max-width: 30px;
+    }
+#insta {
+    padding: 5px;
+    max-width: 30px;
+    }
+#trip {
+    padding: 5px;
+    max-width: 30px;
+    }
+}
