@@ -75,6 +75,9 @@ a:hover {
 img {
     max-width: 80%;
 }
+img.rs {
+	margin-right : 20px;
+}
 
 header a:hover {
 	color: #9d967d;
@@ -89,7 +92,7 @@ header a {
 	padding: 2.875em 1.875em 1.875em;
 	position: absolute;
 	z-index: 1000;
-	  top: 40%;
+	  top: 30%;
   width: 850px;
   height: 300px;
   left: 40%;
@@ -367,6 +370,7 @@ section .info {
 
 }
 
+
 section .info .text {
 	position: absolute;
 	top: 50%;
@@ -375,12 +379,13 @@ section .info .text {
     -ms-transform:translateY(-50%) translatez(0);
     -o-transform:translateY(-50%) translatez(0);
     transform:translateY(-50%) translatez(0);
+	width : 80%;
 
 }
 
 section .info h1{
 	font-size: 3.725em;
-	line-height: 1.6;
+	line-height: 1.2;
 	margin: 0;
 	font-weight: bold;
 	font-family: "Open Sans",sans-serif;
@@ -398,7 +403,7 @@ section .info h2{
 }
 
 section .info p{
-	font-size: 1em;
+	font-size: 2em;
 	line-height: 1.2;
 	margin: 0;
 	font-weight: 400;
@@ -415,6 +420,14 @@ section .info p.menu{
 	font-family: "ff-tisa-web-pro";
 	float: left;
 	width: 80%;
+}
+
+section .info p.menu span{
+	display : inline-block;
+background-color : #000;
+color : #fff;
+padding : 2px;
+margin-top : 3px;
 }
 
 section hr{
@@ -516,6 +529,11 @@ section .footer .button--wapasha.button--inverted:hover {
 	text-transform: uppercase;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+button.right {
+	clear : none !important;
+	margin-left : 20px;
 }
 .button:focus {
 	outline: none;
@@ -626,6 +644,59 @@ section .footer .button--wapasha.button--inverted:hover {
 	margin:0 auto;
 }
 
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+	height : 4px !important;
+    background-color: #be1742 !important;
+	
+}
+.drawer--top .drawer-hamburger, .drawer--top.drawer-open .drawer-hamburger {
+    right: 25px !important;
+}
+
+ul.drawer-m0nu {
+width: 100% ;
+}
+
+ul.drawer-menu li {
+display:block;
+width : 33%;
+height : 70px;
+float:left;
+text-align: center;
+}
+
+ul.drawer-menu li[float="left"] + li {
+float:none;
+}
+
+.drawer-brand {
+	color: #be1742;
+	
+}
+
+
+.drawer-hamburger {
+	width : 4rem !important;
+	padding: 10px .3rem 30px !important;
+}
+
+#CDSWIDPER {
+    font: normal 12px Arial,Verdana,"Bitstream Vera Sans",Helvetica,sans-serif;
+    background-color : transparent !important;
+    border : 1px solid #fff;
+margin-top : 20px !important;
+}
+
+#CDSWIDPER.widPER .widPERLINK a {
+    color: #FFF !important;
+    text-decoration: none !important;
+    }   
+
+
+.plugin {
+	margin-top : 20px;
+}
+
 
 
 @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
@@ -672,6 +743,11 @@ section .info h1{
           animation: none !important;
 }
 
+hr {
+	display : none;
+}
+
+
 
  section .info {
 	display: inline-block;
@@ -692,8 +768,8 @@ nav {
 }
 
 section .info h1 {
-	font-size: 2.0em;
-	line-height: 1.1;
+	font-size: 1.8em;
+	line-height: 1;
 	margin: 20px 0;
 	font-weight: 400;
 	color: #fff;
@@ -703,14 +779,24 @@ section .info h1 {
 
 section .info .text{
 margin-left : 10px;
+    width: 100%;
+	margin-right : 10px;
 }
-section .info p {
+
+
+section .info p{
     font-size: 1em;
     line-height: 1;
 	max-height : 100%;
     width: 100%;
-	margin-right : 10px;
 
+}
+
+section.info p.menu {
+    font-size: 1em;
+    line-height: 1;
+	max-height : 100%;
+width: 100%;
 }
 
 

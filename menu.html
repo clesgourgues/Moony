@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
 <head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -8,18 +8,35 @@
 		<meta name="description" content="Moony - Homemade Burger factory - Bordeaux et Biarriz" />
 		<meta name="author" content="Moony Burgers" />
 		<meta property="og:title" content="Moony - Homemade Burger factory - Bordeaux et Biarriz"/>
-		<meta property="og:url" content="index.html"/>
+		<meta property="og:url" content="menu.html"/>
 		<meta property="og:image" content="images/facebookog.jpg"/>
 		<meta property="og:site_name" content="Moony - Homemade Burger factory - Bordeaux et Biarriz"/>
 		<meta property="og:description" content="Moony - Homemade Burger factory - Bordeaux et Biarriz"/>
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 	</head>
-	<body>
-    </div>
+	<body class="drawer drawer--top">
+		<header role="banner">
+			<button type="button" class="drawer-toggle drawer-hamburger">
+     		 <span class="sr-only">toggle navigation</span>
+     		 <span class="drawer-hamburger-icon"></span>
+   			 </button>
+			<nav class="drawer-nav" role="navigation">	
+				<ul class="drawer-menu">
+					<li><a class="drawer-brand" href="index.html">Moony Burger</a></li>
+					<li><a class="drawer-brand" href="#">La carte</a></li>
+					<li><a class="drawer-brand" href="#">Infos pratiques</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--Menu du haut-->
+		<main role="main">
+        <!-- Page content -->
+    </main>
 		<div class="container">	
 			<div id="cbp-fbscroller" class="cbp-fbscroller">
 				<nav>
@@ -36,7 +53,7 @@
 				<div class="info">
 				<div class="text">
 						<h1 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">Burgers Classics</h1>
-						<h2 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Servis avec frites maison</h2>
+						<h2 class="wow fadeInLeft baseline" data-wow-duration="0.6s" data-wow-delay="0.5s">Servis avec frites maison</h2>
 						<hr class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.6s"/>
 						<div style="clear:both;"></div>
 						<div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
@@ -74,7 +91,7 @@
 						<div style="clear:both;"></div>
 						<div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
                          <h2>Savoyard</h2>
-                        <p class="menu">Bun's du boulanger, boeuf frais du boucher 100% français, bacon, jambon sec, rösti de pomme de terre, fromage à raclette, compotée d'oignons, tomate, oignon rouge, salade, sauce maison<span>17,90€</span><br/>
+                        <p class="menu">Bun's du boulanger, boeuf frais du boucher 100% français, bacon, jambon sec, rösti de pomme de terre, fromage à raclette, compotée d'oignons, tomate, oignon rouge, salade, sauce maison <span>17,90€</span><br/>
 						</p>
 						<div style="clear:both;"></div>
                         <h2>Cheesy</h2>
@@ -82,7 +99,7 @@
 						</p>
                         <div style="clear:both;"></div>
                          <h2>Veggie</h2>
-                        <p class="menu">Bun's du boulanger, mille-feuille de légumes maison, cantal, salade, oignon rouge, huile d'olive vierge, crème de balsamique<span>13,50€</span><br/>
+                        <p class="menu">Bun's du boulanger, mille-feuille de légumes maison, cantal, salade, oignon rouge, huile d'olive vierge, crème de balsamique <span>13,50€</span><br/>
 						</p>
                         <div style="clear:both;"></div>
                          <h2>Ducks</h2>
@@ -142,7 +159,7 @@
 						</p>
                         <div style="clear:both;"></div>
                         <h2>Scandy</h2>
-                        <p class="menu">Saumon, concombre, tomate, salade, sauce crème ciboulette<br/><span>14,90€</span><<br/>
+                        <p class="menu">Saumon, concombre, tomate, salade, sauce crème ciboulette<br/><span>14,90€</span><br/>
 						</p>
                         <div style="clear:both;"></div>
                          <h2>British</h2>
@@ -162,11 +179,11 @@
 						<div style="clear:both;"></div>
 						<div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
 						<h2 >Steack à cheval</h2>
-                        <p class="menu">Steack haché de boeuf frais 100% d'origine française, oeuf au plat<span>13,90€</span><br/>
+                        <p class="menu">Steack haché de boeuf frais 100% d'origine française, oeuf au plat<br /><span>13,90€</span><br/>
 						</p>
                         <div style="clear:both;"></div>
                         <h2>Original Fish'n chips</h2>
-                        <p class"menu">Filet de poisson pané à l'anglaise, frites maison<br/><span>14,50€</span><br/>
+                        <p class="menu">Filet de poisson pané à l'anglaise, frites maison<br/><span>14,50€</span><br/>
 						</p>
                         <div style="clear:both;"></div>
                          <h2>Magret de canard</h2>
@@ -250,19 +267,19 @@
                         	<p class="menu">Moelleux au chocolat<span>5,90€</span><br/>
 							</p>
                         	<div style="clear:both;"></div>
-                        	<p class="menu">Crumble aux pommes caramélisées de mamie<span>5,90€</span><br/>
+                        	<p class="menu">Crumble aux pommes caramélisées de mamie <span>5,90€</span><br/>
 							</p>
                         	<div style="clear:both;"></div>
-                       	 	<p class="menu">Cheesecake original du chef<span>6,50€</span><br/>
+                       	 	<p class="menu">Cheesecake original du chef <span>6,50€</span><br/>
 							</p>
 							<div style="clear:both;"></div>
 						</div>
-                        	<h1 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">Ice Cream</h1>
-							<h2 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Creamy Cup, notre crème glacée maison</h2>
+                        	<h1 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">Creamy Cup</h1>
+							<h2 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Notre crème glacée maison</h2>
 							<hr class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.6s"/>
 							<div style="clear:both;"></div>
 							<div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
-                        	<p class="menu">Coulis au choix : caramel, chocolat ou fruits rouges<br />Gourmandise au choix : smarties, oreo, cookies, speculoos ou brownie<span>4,90€</span><br/>
+                        	<p class="menu">Coulis au choix : caramel, chocolat ou fruits rouges<br />Gourmandise au choix : smarties, oreo, cookies, speculoos ou brownie <span>4,90€</span><br/>
 							</p>
 							<div style="clear:both;"></div>
 							</div>
@@ -292,7 +309,6 @@
 				<div class="info">
 				<div class="text">
 						<h1 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">Boissons</h1>
-						<h2 class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">Nos actus et nos évènements</h2>
 						<hr class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.6s"/>
 					<div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
 						<h2>Eau</h2>
@@ -335,5 +351,24 @@ $(".sassi, .rileys, .spec").hover(function(){
 				cbpFixedScrollLayout.init();
 			});
 			</script>
+			<script>
+            $(document).ready(function () {
+                $('.drawer').drawer({
+                    class: {
+                        nav: 'drawer-nav',
+                        toggle: 'drawer-toggle',
+                        overlay: 'drawer-overlay',
+                        open: 'drawer-open',
+                        close: 'drawer-close',
+                        dropdown: 'drawer-dropdown'
+                    },
+                    iscroll: {
+                        mouseWheel: true,
+                        preventDefault: false
+                    },
+                    showOverlay: true
+                });;
+            });
+        </script>
 	</body>
 </html>
