@@ -223,19 +223,11 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 #fbsection1 {
-	  background:  #f9f9f9;
-}
-
-#actualite {
-	background:  #f9f9f9;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	position: static;
-	transition: 1s ease-in-out;
+	background: url(../images/bg.jpg) transparent;
 }
 
 #concept{
-	background:  #f9f9f9;
+	background: url(../images/concept.jpg) transparent;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: static;
@@ -243,7 +235,7 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 #histoire{
-	background:  #f9f9f9;
+	background: url(../images/histoire.jpg) transparent;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: static;
@@ -257,16 +249,17 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 .info {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.8);
+
+}
+
+#livraison > .info, #contact > .info , #biarritz > .info , #bordeaux > .info {
+	background: #000;
 
 }
 
 #actualites {
-	background: url(../images/actu.jpg) transparent;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	position: static;
-	transition: 1s ease-in-out;
+	background: #fff;
 }
 
 #hamburgers {
@@ -403,7 +396,7 @@ section .horaires {
 }
 
 section .horaires li {
-	font-size: 0.7em;
+	/*font-size: 0.7em;*/
 	line-height: 1;
 	list-style-type: none; 
 	color:  #fff;
@@ -423,7 +416,10 @@ section .map {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow : hidden;
 }
+
+
 
 .left .deliv {
 	display: flex;
@@ -833,13 +829,11 @@ margin-top : 20px !important;
 @media only screen and (max-width: 1460px) {
     /* phones */
 
-section .info h1{
-	font-size: 3.0em;
-}
+
 section .left h1 {
 	font-size: 3.0em;
 }
-}
+
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
@@ -867,25 +861,14 @@ hr {
 	display : none;
 }
 
+/*
 
+ }*/
 
- section .info {
-	display: inline-block;
-	width: 100%;
-	position: relative;
-	bottom: 0px;
-	text-align: left;
-	padding : 10px !important;
- }
-
-nav {
+nav.cbp {
 	display: none;
 }
 
-.mobileinfo button {
-	float: none;
-	margin: 0 auto;
-}
 
 section .info h1 {
 	font-size: 1.8em;
@@ -917,22 +900,26 @@ display: none;
 
   section .info {
   width: 100%;
-  background: rgba(24, 33, 38, 0.0)!important;
-  padding: 40px;
-  height: 200px;
-  min-height: 200px;
-  position: absolute;
-  bottom: 0;
+  background: rgba(24, 33, 38, 0.7)!important;
+  min-height: 500px;
+  position: relative;
+  bottom: 0; 
+	display: inline-block;
+	bottom: 0px;
+	text-align: left;
+	padding : 10px !important;
+
 }
 
 section .left {
-	width: 100%;
-  	background: rgba(24, 33, 38, 0.0)!important;
-  	padding: 40px;
-  	height: 200px;
-  	min-height: 200px;
-  	position: absolute;
-  	bottom: 0;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  bottom: 0; 
+	display: inline-block;
+	bottom: 0px;
+	text-align: left;
+	padding : 10px !important;
 }
 
 section .info p{
@@ -953,19 +940,17 @@ width: 100%;
 
 .button {margin: 1em 0;}
 
-.container > header {
-  z-index: 1000;
-  width: 100%;
-  text-align: center;
-padding: 2.875em 1.875em 1.875em;
-top: 0;
-left : 0;
-margin : 0;
+button.right {
+    clear: none !important;
+    margin-left: 0;
 }
 
+plugin {
+    margin-top: 0;
+}
 
 .container > header h1 {
-	font-size: 3em;
+	font-size: 2.6em;
 	line-height: 1.3;
 	margin-top: 20px;
 	font-weight: 400;
@@ -999,12 +984,4 @@ section .footer {
   line-height: 26px;
 }
 
-.container > header h1 {
-	font-size: 2.6em;
-}
-
-}
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
 }
