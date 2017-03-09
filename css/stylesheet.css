@@ -34,11 +34,11 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
-  	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  	background: transparent url(images/bg2.png) no-repeat;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  	  background: transparent url(images/bg.jpg) no-repeat;
 }
 
 
@@ -72,6 +72,10 @@ a:hover {
 	color: #000;
 }
 
+a.hide {
+	visibility : hidden;
+}
+
 img {
     max-width: 80%;
 }
@@ -79,18 +83,10 @@ img.rs {
 	margin-right : 20px;
 }
 
-/*header a:hover {
-	color: #9d967d;
-	transition: 0.4s all linear;
+ul li {
+	list-style-type: none;
 }
 
-header a {
-	transition: 0.4s all linear;
-}*/
-
-body.BG {
-	background-color: rgba (70, 70, 70, 0.8)
-}
 .container > header {
 	padding: 2.875em 1.875em 1.875em;
 	position: absolute;
@@ -108,23 +104,19 @@ body.BG {
 	font-size: 3.6em;
 	line-height: 1.3;
 	margin-top: 20px;
-	font-weight: 400;
+	font-weight: 600;
 	color: #fff;
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Open Sans', cursive;
 }
 
 .container > header h2 {
 	font-size: 2.2em;
 	line-height: 1.3;
 	margin-top: 20px;
-	font-weight: 400;
-	font-family: 'Fredericka the Great', cursive;
+	font-weight: 600;
+	font-family: 'Open Sans', cursive;
 	text-transform: uppercase;
 	color: #fff;
-}
-
-h2.adresse {
-font-family: "Open Sans",sans-serif !important;
 }
 
 .container > header span {
@@ -202,7 +194,7 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 .no-touch .cbp-fbscroller > nav a:hover {
-	background: #312926;
+	background: #312926);
 	transition:0.2s all linear;
 }
 
@@ -223,11 +215,12 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 #fbsection1 {
-	background: url(../images/bg.jpg) transparent;
+	  background: url(../images/bg.jpg) transparent no-repeat;
 }
 
+
 #concept{
-	background: url(../images/concept.jpg) transparent;
+	background: url(../images/concept.jpg) #f9f9f9;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: static;
@@ -235,7 +228,7 @@ font-family: "Open Sans",sans-serif !important;
 }
 
 #histoire{
-	background: url(../images/histoire.jpg) transparent;
+	background: url(../images/histoire.jpg) #f9f9f9;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: static;
@@ -246,21 +239,24 @@ font-family: "Open Sans",sans-serif !important;
 	background: #000;
 	background-position: 35% 50%!important;
 	transition: 0.2s ease-in-out;
+
 }
 
 .info {
-	background: rgba(0, 0, 0, 0.8);
-
+	background: rgba(0, 0, 0, 0.7);
 }
 
-#livraison > .info, #contact > .info , #biarritz > .info , #bordeaux > .info {
-	background: #000;
-
+ #bordeaux, #biarritz, #livraison , #contact, #actualites {
+	background : #000 !important;
 }
-
+/*
 #actualites {
-	background: #fff;
-}
+	background: url(../images/actu.jpg) transparent;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+}*/
 
 #hamburgers {
 	background: url(../images/hamburgers.jpg) transparent;
@@ -364,86 +360,6 @@ font-family: "Open Sans",sans-serif !important;
 	content: "\f060";
 }
 
-section.left {
-	width: 50%;
-	float: left;
-	padding: 30px;
-	height: 100%;
-	min-height: 100%;
-	position: relative;
-	background: #fff;
-}
-
-section #hours {
-	display: flex;
-	flex-direction: row;
-}
-
-section #hours h3{
-	font-size: 1.025em;
-	line-height: 1.3;
-	color: #FFF;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin: 0;
-	font-weight: 400;
-	font-family: "Open Sans",sans-serif;
-}
-
-section .horaires {
-	display: flex;
-	flex-direction: column;
-}
-
-section .horaires li {
-	/*font-size: 0.7em;*/
-	line-height: 1;
-	list-style-type: none; 
-	color:  #fff;
-	letter-spacing: 3px;
-	margin: 3px;
-	font-family: "Open Sans",sans-serif;
-}
-
-section .map {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 10px;
-}
-
-.carte {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	overflow : hidden;
-}
-
-
-
-.left .deliv {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 80px;
-	vertical-align: center;
-}
-
-.deliv #deliveroo {
-	padding: 10px;
-}
-
-.deliv #foodora {
-	padding: 10px;
-}
-
-#fbo{
-	display: flex;
-	flex-direction: column;
-	padding-top: 110px; 
-	padding-left: 180px;
-}
-
 section .info {
 	width: 50%;
 	float: right;
@@ -451,8 +367,8 @@ section .info {
 	height: 100%;
 	min-height: 100%;
 	position: relative;
-}
 
+}
 
 section .info .text {
 	position: absolute;
@@ -474,29 +390,24 @@ section .info h1{
 	font-family: "Open Sans",sans-serif;
 }
 
-section .info h2 ul{
-	list-style-type: none;
-}
-
 section .info h2{
 	font-size: 1.025em;
 	line-height: 1.2;
 	color: #be1742;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	margin: 10px 0 0 0;
 	font-weight: 400;
 	font-family: "Open Sans",sans-serif;
 }
 
-section .info p {
-	font-size: 2em;
+section .info p{
+	font-size: 1.4em;
 	line-height: 1.2;
 	margin: 0;
 	font-weight: 400;
-	font-family: "ff-tisa-web-pro";
+	font-family: "Raleway", sans-serif;
 	float: left;
-	width: 95%;;
+	width: 80%;
 }
 
 section .info p.menu{
@@ -504,30 +415,20 @@ section .info p.menu{
 	line-height: 1.2;
 	margin: 0;
 	font-weight: 400;
-	font-family: "ff-tisa-web-pro";
+	font-family: "Raleway",sans-serif;
 	float: left;
-	width: 80%;
+	width: 90%;
 }
 
 section .info p.menu span{
 	display : inline-block;
-background-color : #000;
-color : #fff;
-padding : 2px;
-margin-top : 3px;
+	background-color : #000;
+	color : #fff;
+	padding : 2px;
+	margin-top : 3px;
 }
 
-section #hr{
-	width: 80px;
-	float: left;
-	border: none;
-    height: 1px;
-    margin: 5em;
-    color: #fff;
-    background-color: #fff;
-}
-
-section hr{
+hr{
 	width: 80px;
 	float: left;
 	border: none;
@@ -538,12 +439,50 @@ section hr{
     background-color: #fff; /* Modern Browsers */
 }
 
+.left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	min-height: 100%;
+}
+
+.carte {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow : hidden;
+}
+
+.left .deliv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px;
+	vertical-align: center;
+}
+
+.deliv #deliveroo {
+	padding: 10px;
+	max-width : 100%;
+}
+
+.deliv #foodora {
+	padding: 10px;
+	max-width: 100%;
+}
+
+
+#likebox-wrapper {
+	width : 100% !important;
+	padding : 50px;
+}
+
 section .footer h1{
 	font-size: 2.725em;
 	line-height: 1.6;
 	margin: 0;
 	font-weight: 400;
-	font-family: "lust-display",sans-serif;
+	font-family: "Raleway",sans-serif;
 	color: #182327;
 }
 
@@ -559,7 +498,7 @@ section .footer a:hover{
 
 section .footer{
 	text-align: center;
-		  top: 50%;
+	top: 50%;
   width: 500px;
   height: 500px;
   left: 50%;
@@ -607,7 +546,7 @@ section .footer .button--wapasha.button--inverted:hover {
 
 .button {
 	float: left;
-	font-family: "brandon-grotesque";
+	font-family: 'Open Sans', cursive;
 	font-size: 0.9em;
 	letter-spacing: 3px;
 	min-width: 150px;
@@ -733,14 +672,6 @@ button.right {
 	opacity: 1;
 }
 
-
-#learnmore {
-	position: absolute;
-	bottom: 10px;
-	display: block;
-	margin:0 auto;
-}
-
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
 	height : 4px !important;
     background-color: #be1742 !important;
@@ -766,11 +697,13 @@ ul.drawer-menu li[float="left"] + li {
 float:none;
 }
 
-.drawer-brand {
-	color: #be1742;
-	
+a.drawer-brand {
+	color: #be1742 !important;
 }
 
+a.drawer-brand:hover {
+	color: #000 !important;
+}
 
 .drawer-hamburger {
 	width : 4rem !important;
@@ -789,24 +722,17 @@ margin-top : 20px !important;
     text-decoration: none !important;
     }   
 
-
 .plugin {
 	margin-top : 20px;
 }
 
 .scrollup {
-	width: 40px;
-	height: 40px;
+	width: 64px;
+	height: 64px;
 	position: fixed;
 	bottom: 50px;
-	right: 50px;
+	right: 25px;
 	display: none;
-	color: white;
-	background-color: #3a3f51;
-	border: 1px solid #3a3f51;
-	font-size: 20px;
-	text-align: center;
-	line-height: 37px;
 }
  
 .scrollup:hover {
@@ -824,16 +750,19 @@ margin-top : 20px !important;
           animation: none !important;
 }
 
+.fbo{
+	padding: 0; 
+}
 }
 
 @media only screen and (max-width: 1460px) {
     /* phones */
 
-
-section .left h1 {
+section .info h1{
 	font-size: 3.0em;
 }
 
+}
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
@@ -843,10 +772,14 @@ section .left h1 {
     /* phones */
   section {
   	position: relative;
-	  background-size : 50%;
+	  background-size : 20%;
   	background-attachment: scroll!important;
-  	background-position: center 20%!important;
+  	background-position: center !important;
   }
+
+#fbsection1 , #actualites ,#concept , #histoire, #bordeaux, #biarritz, #livraison {
+	background : #000 !important;
+}
 
 	.wow {
   visibility: visible !important;
@@ -861,101 +794,110 @@ hr {
 	display : none;
 }
 
-/*
-
- }*/
-
 nav.cbp {
-	display: none;
+	display: none !important;
 }
 
-
-section .info h1 {
-	font-size: 1.8em;
-	line-height: 1;
-	margin: 20px 0;
-	font-weight: 400;
-	color: #fff;
-	font-family: "lust-display",sans-serif;
+a.hide {
+	visibility: visible;
+	color : #be1742;
 }
 
-
-section .info .text{
-margin-left : 10px;
-    width: 100%;
-	margin-right : 10px;
+a.hide:hover{
+	color : #fff;
 }
 
- section .info h1{
-	font-size: 2.0em;
+.fbo{
+	display : none;
 }
 
-section .left h1{
-	font-size: 2.0em;
+#carte {
+	display : none;
 }
 
-section .info hr{
-display: none;
+left .deliv {
+    padding: 0;
+
 }
 
-  section .info {
-  width: 100%;
-  background: rgba(24, 33, 38, 0.7)!important;
-  min-height: 500px;
-  position: relative;
-  bottom: 0; 
+.left{
+	background : #000;
+	width : 100%;
+}
+
+ section .info {
 	display: inline-block;
+	width: 100%;
+	position: relative;
 	bottom: 0px;
 	text-align: left;
 	padding : 10px !important;
-
-}
-
-section .left {
-  width: 100%;
-  min-height: 500px;
-  position: relative;
-  bottom: 0; 
-	display: inline-block;
-	bottom: 0px;
-	text-align: left;
-	padding : 10px !important;
-}
-
-section .info p{
-    font-size: 1em;
-    line-height: 1;
-	max-height : 100%;
-    width: 100%;
-
-}
-
-section.info p.menu {
-    font-size: 1em;
-    line-height: 1;
-	max-height : 100%;
-width: 100%;
-}
-
-
-.button {margin: 1em 0;}
+ }
 
 button.right {
     clear: none !important;
     margin-left: 0;
 }
 
-plugin {
-    margin-top: 0;
+.cbp-fbscroller menu, .cbp-fbscroller menu section {
+    height: 150% !important;
 }
 
+section .info h1 {
+	font-size: 1.8em;
+	line-height: 1;
+	margin: 5px 0;
+	font-weight: 400;
+	color: #fff;
+}
+
+section .info h2.menu {
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+}
+
+section .info .text{
+margin-left : 10px;
+width: 90%;
+	margin-right : 10px;
+}
+
+section .info p{
+    font-size: 1em;
+    line-height: 1.2;
+	max-height : 100%;
+    width: 90%;
+}
+
+section .info p.menu{
+    font-size: 0.8em;
+    line-height: 1.2;
+	max-height : 100%;
+	width: 90%;
+}
+
+/*
+.button {margin: 1em 0;}*/
+
+.container > header {
+  z-index: 1000;
+  width: 100%;
+  height : 600px;
+  text-align: center;
+padding: 2.875em 1.875em 1.875em;
+top: 20%;
+left : 0;
+margin : 0;
+}
+
+
 .container > header h1 {
-	font-size: 2.6em;
+	font-size: 3em;
 	line-height: 1.3;
 	margin-top: 20px;
 	font-weight: 400;
 	color: #fff;
-	font-family: 'Fredericka the Great', cursive;
 }
 
 .container > header h2 {
@@ -963,7 +905,6 @@ plugin {
 	line-height: 1.3;
 	margin-top: 20px;
 	font-weight: 400;
-	font-family: 'Fredericka the Great', cursive;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -976,7 +917,7 @@ section .footer {
   left: 50%;
   margin-top: -200px;
   margin-left: -150px;
-  font-family: "ff-tisa-web-pro";
+  font-family: "Raleway";
   font-size: 1.2em;
   position: absolute;
   color: #b8b8b8;
@@ -984,4 +925,12 @@ section .footer {
   line-height: 26px;
 }
 
+.container > header h1 {
+	font-size: 2.6em;
+}
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
 }
